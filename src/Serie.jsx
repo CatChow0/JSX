@@ -27,7 +27,7 @@ function Serie() {
                     return <li key={tv.name} ><div><img className="PosterSize" src={'https://image.tmdb.org/t/p/original'+tv.poster_path} alt='Image De : '></img><p className="Overview">{tv.overview}</p></div><a>{tv.name}</a>
                             <div class="progress Overview Percent">
                             <div class="progress-value">
-                            <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{tv.vote_average}/10</h2></div>
+                            <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{tv.vote_average}/10   {tv.vote_count} Votes</h2></div>
                             </div></li>
                 })}
             </ul>

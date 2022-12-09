@@ -27,7 +27,7 @@ function Movie() {
                     return <li key={movie.title} ><div><img className="PosterSize" src={'https://image.tmdb.org/t/p/original'+movie.poster_path} alt='Image Du Film'></img><p className="Overview">{movie.overview}</p></div><a>{movie.title}</a>
                             <div class="progress Overview Percent">
                             <div class="progress-value">
-                            <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{movie.vote_average}/10</h2></div>
+                            <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{movie.vote_average}/10   {movie.vote_count} Votes</h2></div>
                             </div></li>       
                 })}
             </ul>

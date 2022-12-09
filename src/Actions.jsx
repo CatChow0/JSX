@@ -25,7 +25,6 @@ function Action() {
             <ul className="List">
                 {ActionList.map((cate) =>{
                     if (cate.genre_ids.includes(14)){
-                        console.log("ok")
                         return(
                             <li key={cate.title} >
                                 <h2>Action</h2>
@@ -36,13 +35,12 @@ function Action() {
                                 <a>{cate.title}</a>
                                 <div class="progress Overview Percent">
                                 <div class="progress-value">
-                                <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{cate.vote_average}/10</h2>
+                                <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{cate.vote_average}/10   {cate.vote_count} Votes</h2>
                                 </div>
                             </div></li>
                     )
                 }    
                     if (cate.genre_ids.includes(10749)){
-                        console.log("ok2")
                         return(
                             <li key={cate.title} >
                                 <h2>Romance</h2>
@@ -53,13 +51,12 @@ function Action() {
                                 <a>{cate.title}</a>
                                 <div class="progress Overview Percent">
                                 <div class="progress-value">
-                                <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{cate.vote_average}/10</h2>
+                                <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{cate.vote_average}/10   {cate.vote_count} Votes</h2>
                                 </div>
                             </div></li>
                 )
             }    
                     if (cate.genre_ids.includes(27)){
-                        console.log("ok3")
                         return(
                             <li key={cate.title} >
                             <h2>Horreur</h2>
@@ -70,13 +67,12 @@ function Action() {
                             <a>{cate.title}</a>
                             <div class="progress Overview Percent">
                                 <div class="progress-value">
-                                <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{cate.vote_average}/10</h2>
+                                <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{cate.vote_average}/10   {cate.vote_count} Votes</h2>
                                 </div>
                             </div></li>
                 )
             }  
                     if (cate.genre_ids.includes(18)){
-                        console.log("ok4")
                         return(
                             <li key={cate.title} >
                             <h2>Drama</h2>
@@ -88,7 +84,7 @@ function Action() {
 
                             <div class="progress Overview Percent">
                                 <div class="progress-value">
-                                <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{cate.vote_average}/10</h2>
+                                <h2 href="https://usecheck.com/" class="btn-shine" target="_blank">{cate.vote_average}/10    {cate.vote_count} Votes</h2>
                                 </div>
                             </div>
                             </li>

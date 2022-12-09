@@ -14,8 +14,8 @@ function App() {
       <Research></Research>
       <Serie></Serie>
       <Movie></Movie>
-      <Action id='cate'></Action>
-      <NewTV id='New'></NewTV>
+      <Action></Action>
+      <NewTV></NewTV>
       
 
     </div>
@@ -23,3 +23,5 @@ function App() {
 }
 
 export default App;
+
+
